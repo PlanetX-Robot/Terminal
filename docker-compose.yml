@@ -1,11 +1,11 @@
 # yaml 配置
 version: '3'
 services:
-  docker-shell:
+  docker-terminal:
     build: 
       context: .
       dockerfile: Dockerfile
-    image: docker-shell
-    container_name: docker-shell
+    image: docker-terminal
+    container_name: docker-terminal
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
